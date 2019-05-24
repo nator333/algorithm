@@ -1,4 +1,4 @@
-# day1 Basic of python
+ # day1 Basic of python
 import sys
 import select
 

@@ -1,4 +1,4 @@
-package homework.oct16
+package codebat
 
 class CodebatArray2 {
 

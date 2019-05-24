@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Executor",
+            "request": "launch",
+            "mainClass": "Leetcode.Executor",
+            "projectName": "kotlin-algorithm"
+        }
+    ]
+}
