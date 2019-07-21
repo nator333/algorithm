@@ -1,4 +1,4 @@
-package kotlinAlgorithm.leetcode
+package algorithm.leetcode
 
 import kotlin.test.Test
 import kotlin.test.assertTrue

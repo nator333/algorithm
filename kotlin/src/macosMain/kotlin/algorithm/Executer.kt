@@ -1,8 +1,8 @@
-package kotlinAlgorithm
+package algorithm
 
-import kotlinAlgorithm.leetcode.AddTwoNumbers
-import kotlinAlgorithm.leetcode.MergeTwoBinaryTrees
-import kotlinAlgorithm.leetcode.TwoSome
+import algorithm.leetcode.AddTwoNumbers
+import algorithm.leetcode.MergeTwoBinaryTrees
+import algorithm.leetcode.TwoSome
 
 fun main() {
   println("TwoSome:")

@@ -1,4 +1,4 @@
-package kotlinAlgorithm.leetcode
+package algorithm.leetcode
 
 class MergeTwoBinaryTrees {
   class TreeNode(var `val`: Int) {

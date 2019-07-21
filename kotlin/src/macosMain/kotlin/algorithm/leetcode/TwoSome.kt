@@ -1,4 +1,4 @@
-package kotlinAlgorithm.leetcode
+package algorithm.leetcode
 
 class TwoSome {
   fun twoSum(nums: IntArray, target: Int): IntArray {

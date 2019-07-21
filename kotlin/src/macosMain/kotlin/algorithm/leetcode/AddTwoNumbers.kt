@@ -1,4 +1,4 @@
-package kotlinAlgorithm.leetcode
+package algorithm.leetcode
 
 class AddTwoNumbers {
   class ListNode(var `val`: Int) {
