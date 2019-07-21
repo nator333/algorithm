@@ -1,21 +1,22 @@
 # coding: utf-8
 import math
-## Get prime numbers
+
+# Get prime numbers
 number = int(input("Input certain number for prime numbers\n"))
 print("==================")
 primeAry = [True] * (number + 1)
 primeAry[0] = primeAry[1] = False
 
 for i in range(2, int(math.sqrt(number)) + 1):
-	if not primeAry[i]: continue
+    if not primeAry[i]:
+        continue
 
-	for j in range(2 * i, number, i):
-		primeAry[j] = False
-
+    for j in range(2 * i, number, i):
+        primeAry[j] = False
 
 print(primeAry)
 for i in range(len(primeAry)):
-	if primeAry[i]: print(i)
+    if primeAry[i]: print(i)
 
 
 # Teacher's answer
@@ -37,4 +38,4 @@ for i in range(len(primes)):
         print(i, end=' ')
 
 #
-## 
+##

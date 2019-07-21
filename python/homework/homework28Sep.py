@@ -1,14 +1,17 @@
 # coding: utf-8
 import unittest
+
+
 ## main merge sort function
 
 # 1. Use draw.io to create flowcharts or implement the solutions for the following problems in any programming language.
 
 ## a.Check if a given string input is a palindrome.
 ### ex) abba -> True, ​a​ab​b​ -> False
-def isPalindrome(word = "") -> bool:
+def isPalindrome(word="") -> bool:
     loweredWord = word.lower()
     return loweredWord == loweredWord[::-1]
+
 
 ## Test
 class TestIsPalindrome(unittest.TestCase):
@@ -19,9 +22,10 @@ class TestIsPalindrome(unittest.TestCase):
         self.assertTrue(isPalindrome("Whatahw"))
         print("============================================================== isPalindrome   end")
 
+
 ## b.Implement an algorithm to determine if a stringhas all unique characters.
 ### ex) abcd -> True, a​bb​c -> False
-def hasOnlyUniqueChars(word = "") -> bool:
+def hasOnlyUniqueChars(word="") -> bool:
     loweredWord = word.lower()
     checkDupAry = [False] * 25
     for characterIndex in range(len(loweredWord)):
@@ -30,6 +34,7 @@ def hasOnlyUniqueChars(word = "") -> bool:
             return False
         checkDupAry[asciiIndex] = True
     return True
+
 
 ## Test
 class TestHasOnlyUniqueChars(unittest.TestCase):
@@ -40,21 +45,23 @@ class TestHasOnlyUniqueChars(unittest.TestCase):
         self.assertFalse(hasOnlyUniqueChars("Carc"))
         print("============================================================== hasOnlyUniqueChars   end")
 
+
 ## c.Given two strings, implement an algorithm to decide if one is a permutation of the other.
 ### ex) abc, cab -> True    abb, cba -> False
-def isPermutation(wordA = "", wordB = "") -> bool:
+def isPermutation(wordA="", wordB="") -> bool:
     if len(wordA) != len(wordB):
         return False
 
-    def convertWordToAsciiAry(word = "") -> int[]:
+    def convertWordToAsciiAry(word="") -> int[]:
         loweredWord = word.lower()
         asciiAry = [0] * 25
         for i in range(len(loweredWord)):
             asciiIndex = ord(loweredWord[i]) - 97
-            asciiAry[asciiIndex] += 1 
+            asciiAry[asciiIndex] += 1
         return asciiAry
 
     return convertNumToAry(wordA) == convertNumToAry(wordB)
+
 
 ## Test
 class TestIsPermutation(unittest.TestCase):
@@ -68,7 +75,7 @@ class TestIsPermutation(unittest.TestCase):
 
 ## d.Implement an algorithm to check whether a number(int) is palindrome or not.
 ### ex) 1111 or 1221 or 12321 -> True    1234 or 1222 or 12322 -> False
-def isPalindromeNum(num = 0) -> bool:
+def isPalindromeNum(num=0) -> bool:
     numAry = []
     while num // 10 == 0:
         numAry.append(num % 10)
@@ -81,6 +88,7 @@ def isPalindromeNum(num = 0) -> bool:
 
     return True
 
+
 ## Test
 class TestIsPalindromeNum(unittest.TestCase):
     def test(self):
@@ -91,5 +99,6 @@ class TestIsPalindromeNum(unittest.TestCase):
         self.assertFalse(isPalindromeNum(123))
         self.assertFalse(isPalindromeNum(21))
         print("============================================================== isPalindromeNum   end")
+
 
 unittest.main()

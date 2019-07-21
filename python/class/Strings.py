@@ -1,19 +1,21 @@
-
 # coding: utf-8
 import unittest
+
+
 # day6 String Palindrome
 ## Effective Way
 def isPalindrome(suspiciousStr: str) -> bool:
     if isBlank(suspiciousStr):
-        return False 
-    
+        return False
+
     return suspiciousStr == suspiciousStr[::-1]
+
 
 ## Easy Way
 def isPalindrome2(suspiciousStr: str) -> bool:
     if isBlank(suspiciousStr):
-        return False 
-    
+        return False
+
     startIndex = 0
     lastIndex = len(suspiciousStr) - 1
     while startIndex < lastIndex:
@@ -22,11 +24,13 @@ def isPalindrome2(suspiciousStr: str) -> bool:
             lastIndex += -1
         else:
             return False
-    
+
     return True
 
-def isBlank (myString):
+
+def isBlank(myString):
     return not (myString and myString.strip())
+
 
 ## Test
 class TestIsPalindrome(unittest.TestCase):
@@ -42,12 +46,14 @@ class TestIsPalindrome(unittest.TestCase):
         self.assertTrue(isPalindrome2("AppwppA"))
         print("============================================================== isPalindrome2   end")
 
+
 ## Implement which can detect if a word has only unique characters
 ## Speed and fewer steps
-def hasOnlyUniqueCharacter(word = "") -> bool:
+def hasOnlyUniqueCharacter(word="") -> bool:
     # if set only have unique element, so if word length and set length differ,
     # word has same character in it
     return len(word) == len(set(list(word)))
+
 
 ## Test
 class TestHasOnlyUniqueCharacter(unittest.TestCase):
@@ -58,5 +64,6 @@ class TestHasOnlyUniqueCharacter(unittest.TestCase):
         self.assertFalse(hasOnlyUniqueCharacter("   "))
         self.assertTrue(hasOnlyUniqueCharacter(""))
         print("============================================================== hasUniqueCharacter   end")
+
 
 unittest.main()

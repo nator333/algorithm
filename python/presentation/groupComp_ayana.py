@@ -1,5 +1,5 @@
 # coding: utf-8
-def probAntCollisionFromVertexNum(vertex = 3) -> str:
+def probAntCollisionFromVertexNum(vertex=3) -> str:
     if vertex < 3: return "error"
     # calculate number of combinations
     ## (0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)
@@ -13,6 +13,7 @@ def probAntCollisionFromVertexNum(vertex = 3) -> str:
     collisionCaseNum /= 2
     # Return fraction
     return str(int(collisionCaseNum)) + "/" + str(int(combinationNum))
+
 
 for i in range(3, 10):
     print(probAntCollisionFromVertexNum(i))

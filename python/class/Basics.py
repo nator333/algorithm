@@ -1,6 +1,4 @@
- # day1 Basic of python
-import sys
-import select
+# day1 Basic of python
 
 print("Hello World")
 

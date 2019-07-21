@@ -1,5 +1,6 @@
 # day3 sort
 import copy
+
 loopCount = 0
 ## selection sort
 sortTargetIndex = 0
@@ -17,7 +18,7 @@ while sortTargetIndex < len(unsortedNumbers):
     compareTargetIndex = sortTargetIndex + 1
     while compareTargetIndex < len(unsortedNumbers):
         loopCount += 1
-        if isAscend :
+        if isAscend:
             # Ascend : if minNum is not min number
             if minNum > unsortedNumbers[compareTargetIndex]:
                 # update minmum number
@@ -29,7 +30,7 @@ while sortTargetIndex < len(unsortedNumbers):
                     unsortedNumbers[compareTargetIndex]
                 unsortedNumbers[compareTargetIndex] = \
                     tempSavedNum
-        else :
+        else:
             # Descend : if maxNum is not max number
             if maxNum < unsortedNumbers[compareTargetIndex]:
                 # update maximum number
@@ -43,8 +44,8 @@ while sortTargetIndex < len(unsortedNumbers):
                     tempSavedNum
         compareTargetIndex = compareTargetIndex + 1
     sortTargetIndex = sortTargetIndex + 1
-    
-print("Result is %s, loop count is %s" %(unsortedNumbers, loopCount))
+
+print("Result is %s, loop count is %s" % (unsortedNumbers, loopCount))
 
 ## bubble sort
 loopCount = 0
@@ -60,16 +61,16 @@ swapCount = -1
 j = len(unsortedNumbers) - 1
 while swapCount != 0:
     swapCount = 0
-    for i in range(j): # 3 times
+    for i in range(j):  # 3 times
         loopCount += 1
-        if unsortedNumbers[i] > unsortedNumbers[i + 1] :
+        if unsortedNumbers[i] > unsortedNumbers[i + 1]:
             swapCount += 1
             tempSavedNum = unsortedNumbers[i]
-            unsortedNumbers[i] =unsortedNumbers[i + 1]
+            unsortedNumbers[i] = unsortedNumbers[i + 1]
             unsortedNumbers[i + 1] = tempSavedNum
     j -= 1
 
-print("Teacher's answer is %s, loop count is %s" %(unsortedNumbers, loopCount))
+print("Teacher's answer is %s, loop count is %s" % (unsortedNumbers, loopCount))
 
 # common answer
 unsortedNumbers = copy.deepcopy(originalUnsortedNumbers)
@@ -79,7 +80,7 @@ for i in range(len(unsortedNumbers) - 1, 0, -1):
         loopCount += 1
         if unsortedNumbers[j] > unsortedNumbers[j + 1]:
             tempSavedNum = unsortedNumbers[j]
-            unsortedNumbers[j] =unsortedNumbers[j + 1]
+            unsortedNumbers[j] = unsortedNumbers[j + 1]
             unsortedNumbers[j + 1] = tempSavedNum
 
-print("Common answer is %s, loop count is %s" %(unsortedNumbers, loopCount))
+print("Common answer is %s, loop count is %s" % (unsortedNumbers, loopCount))
