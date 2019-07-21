@@ -1,8 +1,5 @@
-package leetcode
+package kotlinAlgorithm.leetcode
 
-/**
- *
- */
 class TwoSome {
   fun twoSum(nums: IntArray, target: Int): IntArray {
     for (i in nums.indices) {
@@ -13,7 +10,7 @@ class TwoSome {
       }
     }
     
-    throw Exception()
+    return intArrayOf()
   }
   
   fun nSquare(nums: IntArray, target: Int): IntArray {

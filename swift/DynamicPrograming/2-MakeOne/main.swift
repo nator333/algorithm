@@ -2,6 +2,11 @@
 //  main.swift
 //  MakeOne
 //
+
+ns-272.awsdns-34.com.
+ns-1191.awsdns-20.org.
+ns-970.awsdns-57.net.
+ns-1880.awsdns-43.co.uk.
 //  Created by Masahiro on 2019-04-08.
 //  Copyright © 2019 nator333. All rights reserved.
 //

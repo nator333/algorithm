@@ -3,7 +3,7 @@ package codebat
 class CodebatArray3 {
 
   fun maxSpan(nums: IntArray): Int {
-    if (nums.isEmpty()) {
+    if (nums.size == 0) {
       return 0
     }
 

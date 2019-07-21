@@ -1,6 +1,4 @@
-package leetcode
-
-import java.util.*
+package kotlinAlgorithm.leetcode
 
 class AddTwoNumbers {
   class ListNode(var `val`: Int) {
@@ -10,10 +8,10 @@ class AddTwoNumbers {
       this.next = nextNode
     }
     
-    constructor(ary: Array<Int>) : this(ary[0]) {
-      val queue = LinkedList<Int>()
-      queue.addAll(ary)
-      queue.pop()
+    constructor(ary: IntArray) : this(ary[0]) {
+      val queue = intArrayOf()
+      queue.plus(ary)
+      queue.last()
       
       var size = ary.size
       var child: ListNode? = null
@@ -21,11 +19,11 @@ class AddTwoNumbers {
       while (size > 1) {
         when {
           this.next == null -> {
-            this.next = ListNode(queue.pop())
+            this.next = ListNode(queue.last())
             child = this.next
           }
           else -> {
-            child!!.next = ListNode(queue.pop())
+            child!!.next = ListNode(queue.last())
             child = child.next
           }
         }
@@ -34,16 +32,11 @@ class AddTwoNumbers {
       
       println(this)
     }
-    
+  
     override fun equals(other: Any?): Boolean {
-      if (this === other) return true
-      if (javaClass != other?.javaClass) return false
-      
-      other as ListNode
-      
+      if (other !is ListNode) return false
       if (`val` != other.`val`) return false
       if (next != other.next) return false
-      
       return true
     }
     
