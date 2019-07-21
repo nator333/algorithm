@@ -7,47 +7,47 @@
 		<key>BackTracking.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>17</integer>
 		</dict>
 		<key>BackTracking.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>24</integer>
 		</dict>
 		<key>Lotto.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>58</integer>
 		</dict>
 		<key>MiniProject.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>35</integer>
 		</dict>
 		<key>MiniProject2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>11</integer>
 		</dict>
 		<key>Recursive.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>50</integer>
 		</dict>
 		<key>RemoteControler.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>8</integer>
+			<integer>25</integer>
 		</dict>
 		<key>RemoteControler.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>41</integer>
 		</dict>
 		<key>SwiftAGDS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>52</integer>
 		</dict>
 	</dict>
 </dict>

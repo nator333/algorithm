@@ -8,7 +8,7 @@
 
 // Masa
 func numDecodings(_ s: String) -> Int {
-    if s.first! == "0" || s.contains("00") {
+    if s.first! == "0" || s.contains("0") {
         return 0
     }
     var memo = [Int](repeating: 0, count: s.count)
