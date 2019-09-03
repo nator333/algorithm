@@ -15,5 +15,8 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    compile 'org.springframework.boot:spring-boot-starter-aop'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4-rc-2"
 }
