@@ -1,19 +1,27 @@
 package algorithm.leetcode
 
-import spock.lang.Specification
-import spock.lang.Unroll
+class TwoSomeTest extends GroovyTestCase {
+    def test() {
+        TwoSome twoSome = new TwoSome()
 
-class TwoSomeTest extends Specification {
-    @Unroll
-    def "Indexes of sum #answer from #nums is #result "() {
-        setup:
-        def twoSome = new TwoSome.Solution()
+        int[] argIntAry = [3, 1, 2, 5, 4]
+        Integer[] ansIntAry = [1, 2]
+        assertArrayEquals((Integer[])twoSome.execute(argIntAry, 3), ansIntAry)
 
-        expect:
-        result == twoSome.twoSum(nums, answer)
+        argIntAry = [3, 1, 2, 5, 4]
+        ansIntAry = [2, 3]
+        assertArrayEquals((Integer[])twoSome.execute(argIntAry, 7), ansIntAry)
 
-        where:
-        nums     | answer || result
-        [0, 2]   | 2      || [0, 1]
+        argIntAry = [3, 1, 2, 5, 4]
+        ansIntAry = [0, 3]
+        assertArrayEquals((Integer[])twoSome.execute(argIntAry, 8), ansIntAry)
+
+        argIntAry = [3, 1, 2, 5, 4]
+        ansIntAry = [0, 2]
+        assertArrayEquals((Integer[])twoSome.execute(argIntAry, 5), ansIntAry)
+
+        argIntAry = []
+        ansIntAry = []
+        assertArrayEquals((Integer[])twoSome.execute(argIntAry, 8), ansIntAry)
     }
 }
