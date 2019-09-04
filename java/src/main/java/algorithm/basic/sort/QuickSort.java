@@ -21,8 +21,8 @@ public class QuickSort extends Sort {
 
     int leftIndex = startIndex;
     int rightIndex = pivotIndex - 1;
+    ++this.inspection.calculationCount;
     while (leftIndex != rightIndex && leftIndex <= pivotIndex) {
-      ++this.inspection.calculationCount;
       while (target[leftIndex] < target[pivotIndex]) {
         ++this.inspection.calculationCount;
         leftIndex++;

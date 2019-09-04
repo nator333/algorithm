@@ -5,7 +5,7 @@ class BubbleSortTest extends SortTest {
         this.sort = new BubbleSort()
     }
 
-    public testImprovedSort() {
+    def testImprovedSort() {
         println this.class.getSimpleName() + ":"
 
         int[] argIntAry = [3, 1, 2, 5, 4]

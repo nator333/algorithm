@@ -1,11 +1,9 @@
 package algorithm.basic.sort
 
-import org.springframework.beans.factory.annotation.Autowired
-
 class SortTest extends GroovyTestCase {
     Sort sort
 
-    public testSort() {
+    def testSort() {
         println this.class.getSimpleName() + ":"
 
         int[] argIntAry = [3, 1, 2, 5, 4]
