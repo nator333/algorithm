@@ -9,7 +9,7 @@ public class BubbleSort extends Sort {
   public int[] sort(int[] target) {
     int swapTemp;
     for (int baseIndex = 0; baseIndex < target.length; baseIndex++) {
-      for (int iterIndex = (target.length - 1); iterIndex > 0; iterIndex--) {
+      for (int iterIndex = (target.length - 1); iterIndex > baseIndex; iterIndex--) {
         ++inspection.calculationCount;
 
         if (target[iterIndex] < target[iterIndex - 1]) {
@@ -28,7 +28,7 @@ public class BubbleSort extends Sort {
     int swapCount = 0;
     int swapTemp;
     for (int baseIndex = 0; baseIndex < target.length; baseIndex++) {
-      for (int iterIndex = (target.length - 1); iterIndex > 0; iterIndex--) {
+      for (int iterIndex = (target.length - 1); iterIndex > baseIndex; iterIndex--) {
         ++inspection.calculationCount;
         if (target[iterIndex] < target[iterIndex - 1]) {
           ++inspection.swapCount;
@@ -38,6 +38,7 @@ public class BubbleSort extends Sort {
           target[iterIndex - 1] = swapTemp;
         }
       }
+      ++inspection.calculationCount;
       if (swapCount == 0) {
         break;
       }
