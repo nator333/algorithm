@@ -11,6 +11,9 @@ import algorithm.basic.sort.SelectionSortTest;
 import algorithm.leetcode.AddTwoNumbers;
 import algorithm.leetcode.AddTwoNumbersTest;
 import algorithm.leetcode.LengthOfLongestSubstringTest;
+import algorithm.leetcode.ReverseInteger;
+import algorithm.leetcode.ReverseIntegerTest;
+import algorithm.leetcode.StringToIntegerTest;
 import algorithm.leetcode.TwoSomeTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,6 +29,8 @@ public class ApplicationTests {
     new TwoSomeTest().test();
     new AddTwoNumbersTest().testAddTwoNumbers();
     new LengthOfLongestSubstringTest().testLengthOfLongestSubstring();
+    new ReverseIntegerTest().testReverse();
+    new StringToIntegerTest().testMyAtoi();
   }
 
   @Test
