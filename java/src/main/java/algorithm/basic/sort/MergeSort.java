@@ -1,8 +1,14 @@
 package algorithm.basic.sort;
 
+import algorithm.annotations.LogExecutionTime;
+import algorithm.utils.InspectionUtil.Inspection;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class MergeSort extends Sort {
 
+  @LogExecutionTime
   @Override
   public int[] sort(int[] target) {
     return this.recursiveSort(target, 0, target.length - 1);

@@ -1,0 +1,8 @@
+<aspectj>
+  <aspects>
+    <aspect name="algorithm.aspects.InspectionAspect"/>
+    <weaver options="-verbose -showWeaveInfo">
+      <include within="algorithm.*"/>
+    </weaver>
+  </aspects>
+</aspectj>

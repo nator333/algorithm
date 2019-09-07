@@ -1,7 +1,11 @@
 package algorithm.basic.sort;
 
 import algorithm.annotations.LogExecutionTime;
+import algorithm.utils.InspectionUtil.Inspection;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class HeapSort extends Sort {
 
   @LogExecutionTime

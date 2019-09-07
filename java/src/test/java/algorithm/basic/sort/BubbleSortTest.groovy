@@ -1,8 +1,18 @@
 package algorithm.basic.sort
 
-class BubbleSortTest extends SortTest {
-    BubbleSortTest() {
-        this.sort = new BubbleSort()
+import algorithm.utils.InspectionUtil.Inspection
+import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Component
+
+@Component
+class BubbleSortTest extends SortTest<BubbleSort> {
+    @Autowired
+    BubbleSortTest(BubbleSort sort, Inspection inspection) {
+        this.sort = sort
+        this.sort.inspection = inspection
+        print this.sort.inspection == null
+        sort.inspection = inspection
+        print sort.inspection == null
     }
 
     def testImprovedSort() {

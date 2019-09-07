@@ -1,16 +1,10 @@
 package algorithm.utils;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
-import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.springframework.stereotype.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class InspectionUtil {
-  private InspectionUtil() {}
+  private static final Logger logger = LoggerFactory.getLogger(InspectionUtil.class);
 
   public static class Inspection {
     private int outCount = 0;
@@ -19,15 +13,11 @@ public class InspectionUtil {
 
     public void printComplexity(int aryLength) {
       ++outCount;
-      System.out.println(
+      logger.info(
           this.outCount + ", " + aryLength + " elements, calculationCount = " + this.calculationCount + ", swapCount = "
               + this.swapCount);
       this.swapCount = 0;
       this.calculationCount = 0;
     }
-  }
-
-  public static Inspection createInspection() {
-    return new Inspection();
   }
 }
