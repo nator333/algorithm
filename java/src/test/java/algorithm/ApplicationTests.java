@@ -11,6 +11,7 @@ import algorithm.basic.sort.SelectionSortTest;
 import algorithm.leetcode.AddTwoNumbers;
 import algorithm.leetcode.AddTwoNumbersTest;
 import algorithm.leetcode.LengthOfLongestSubstringTest;
+import algorithm.leetcode.RegularExpressionMatchingTest;
 import algorithm.leetcode.ReverseInteger;
 import algorithm.leetcode.ReverseIntegerTest;
 import algorithm.leetcode.StringToIntegerTest;
@@ -31,6 +32,7 @@ public class ApplicationTests {
     new LengthOfLongestSubstringTest().testLengthOfLongestSubstring();
     new ReverseIntegerTest().testReverse();
     new StringToIntegerTest().testMyAtoi();
+    new RegularExpressionMatchingTest().testIsMatch();
   }
 
   @Test
