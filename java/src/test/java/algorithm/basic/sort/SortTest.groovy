@@ -1,8 +1,5 @@
 package algorithm.basic.sort
 
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.stereotype.Component
-
 class SortTest<T extends Sort> extends GroovyTestCase {
     T sort
 

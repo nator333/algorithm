@@ -1,8 +1,5 @@
 package algorithm.basic.search;
 
-import java.util.Arrays;
-import java.util.Collections;
-
 public class BinarySearch extends Search {
 
   @Override
