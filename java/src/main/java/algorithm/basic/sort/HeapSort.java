@@ -19,7 +19,7 @@ public class HeapSort extends Sort {
       ++this.inspection.swapCount;
       int swapInt = target[0];
       target[0] = target[i];
-      heapify(target, 0, i);
+      this.heapify(target, 0, i);
       target[i] = swapInt;
     }
 
@@ -47,9 +47,8 @@ public class HeapSort extends Sort {
       target[largestIndex] = swapInt;
 
       // Recursively heapify the affected sub-tree
-      heapify(target, largestIndex, maxIndex);
+      this.heapify(target, largestIndex, maxIndex);
     }
   }
-
 
 }

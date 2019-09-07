@@ -1,6 +1,5 @@
 package algorithm.basic.sort;
 
-import java.util.Arrays;
 
 public class MergeSort extends Sort {
 
@@ -27,9 +26,7 @@ public class MergeSort extends Sort {
   private int[] merge(int[] leftAry, int[] rightAry, int aryLength) {
     int[] result = new int[aryLength + 1];
 
-    int mergedAryIndex = 0;
-    int leftMergedIndex = 0;
-    int rightMergedIndex = 0;
+    int mergedAryIndex = 0, leftMergedIndex = 0, rightMergedIndex = 0;
 
     while (leftMergedIndex < leftAry.length && rightMergedIndex < rightAry.length) {
       ++this.inspection.calculationCount;

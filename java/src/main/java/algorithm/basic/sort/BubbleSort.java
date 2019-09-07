@@ -12,7 +12,9 @@ public class BubbleSort extends Sort {
       for (int iterIndex = (target.length - 1); iterIndex > baseIndex; iterIndex--) {
         ++inspection.calculationCount;
 
-        if (target[iterIndex] < target[iterIndex - 1]) {
+        // index: 0, 1 -> 0, 1
+        // value: 2, 1 -> 1, 2
+        if (target[iterIndex -1 ] > target[iterIndex]) {
           swapTemp = target[iterIndex];
           target[iterIndex] = target[iterIndex - 1];
           target[iterIndex - 1] = swapTemp;
@@ -30,7 +32,7 @@ public class BubbleSort extends Sort {
     for (int baseIndex = 0; baseIndex < target.length; baseIndex++) {
       for (int iterIndex = (target.length - 1); iterIndex > baseIndex; iterIndex--) {
         ++inspection.calculationCount;
-        if (target[iterIndex] < target[iterIndex - 1]) {
+        if (target[iterIndex - 1] > target[iterIndex]) {
           ++inspection.swapCount;
           ++swapCount;
           swapTemp = target[iterIndex];

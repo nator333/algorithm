@@ -10,19 +10,21 @@ public class InsertionSort extends Sort {
     for (int newIntIndex = 0; newIntIndex < target.length; newIntIndex++) {
       // Find insertion point
       int insertionPointIndex = 0;
-      for (; insertionPointIndex < newIntIndex; insertionPointIndex++) {
+      while (insertionPointIndex < newIntIndex) {
         ++this.inspection.calculationCount;
         if (target[insertionPointIndex] > target[newIntIndex]) {
           break;
         }
+        insertionPointIndex++;
       }
       // Insert
       int swapInt = target[newIntIndex];
-      // Shift element from the end trying not to overwrite
+      // 1. Shift element from the end, trying not to overwrite
       for (int i = newIntIndex; i > insertionPointIndex; i--) {
         ++this.inspection.swapCount;
         target[i] = target[i - 1];
       }
+      // 2. Insert
       target[insertionPointIndex] = swapInt;
       ++this.inspection.swapCount;
     }

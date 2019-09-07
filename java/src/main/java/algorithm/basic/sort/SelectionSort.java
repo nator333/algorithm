@@ -7,8 +7,7 @@ public class SelectionSort extends Sort {
   @LogExecutionTime
   @Override
   public int[] sort(int[] target) {
-    int minIndex;
-    int swapTemp;
+    int minIndex, swapTemp;
 
     for (int baseIndex = 0; baseIndex < target.length; baseIndex++) {
       minIndex = baseIndex;
