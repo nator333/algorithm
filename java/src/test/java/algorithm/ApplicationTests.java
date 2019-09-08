@@ -13,6 +13,7 @@ import algorithm.leetcode.ContainerWithMostWaterTest;
 import algorithm.leetcode.LengthOfLongestSubstringTest;
 import algorithm.leetcode.RegularExpressionMatchingTest;
 import algorithm.leetcode.ReverseIntegerTest;
+import algorithm.leetcode.RomanToIntegerTest;
 import algorithm.leetcode.StringToIntegerTest;
 import algorithm.leetcode.TwoSomeTest;
 import org.junit.Test;
@@ -46,6 +47,7 @@ public class ApplicationTests {
     new StringToIntegerTest().testMyAtoi();
     //new RegularExpressionMatchingTest().testIsMatch();
     new ContainerWithMostWaterTest().testMaxArea();
+    new RomanToIntegerTest().testRomanToInt();
   }
 
   @Test
