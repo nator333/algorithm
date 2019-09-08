@@ -9,6 +9,7 @@ import algorithm.basic.sort.MergeSortTest;
 import algorithm.basic.sort.QuickSortTest;
 import algorithm.basic.sort.SelectionSortTest;
 import algorithm.leetcode.AddTwoNumbersTest;
+import algorithm.leetcode.ContainerWithMostWaterTest;
 import algorithm.leetcode.LengthOfLongestSubstringTest;
 import algorithm.leetcode.RegularExpressionMatchingTest;
 import algorithm.leetcode.ReverseIntegerTest;
@@ -43,7 +44,8 @@ public class ApplicationTests {
     new LengthOfLongestSubstringTest().testLengthOfLongestSubstring();
     new ReverseIntegerTest().testReverse();
     new StringToIntegerTest().testMyAtoi();
-    new RegularExpressionMatchingTest().testIsMatch();
+    //new RegularExpressionMatchingTest().testIsMatch();
+    new ContainerWithMostWaterTest().testMaxArea();
   }
 
   @Test
