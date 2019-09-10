@@ -11,6 +11,7 @@ import algorithm.basic.sort.SelectionSortTest;
 import algorithm.leetcode.AddTwoNumbersTest;
 import algorithm.leetcode.ContainerWithMostWaterTest;
 import algorithm.leetcode.LengthOfLongestSubstringTest;
+import algorithm.leetcode.LongestCommonPrefixTest;
 import algorithm.leetcode.RegularExpressionMatchingTest;
 import algorithm.leetcode.ReverseIntegerTest;
 import algorithm.leetcode.RomanToIntegerTest;
@@ -48,6 +49,7 @@ public class ApplicationTests {
     //new RegularExpressionMatchingTest().testIsMatch();
     new ContainerWithMostWaterTest().testMaxArea();
     new RomanToIntegerTest().testRomanToInt();
+    new LongestCommonPrefixTest().testLongestCommonPrefix();
   }
 
   @Test
