@@ -16,6 +16,7 @@ import algorithm.leetcode.RegularExpressionMatchingTest;
 import algorithm.leetcode.ReverseIntegerTest;
 import algorithm.leetcode.RomanToIntegerTest;
 import algorithm.leetcode.StringToIntegerTest;
+import algorithm.leetcode.ThreeSumTest;
 import algorithm.leetcode.TwoSomeTest;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -50,6 +51,7 @@ public class ApplicationTests {
     new ContainerWithMostWaterTest().testMaxArea();
     new RomanToIntegerTest().testRomanToInt();
     new LongestCommonPrefixTest().testLongestCommonPrefix();
+    new ThreeSumTest().testThreeSum();
   }
 
   @Test
