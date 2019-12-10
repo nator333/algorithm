@@ -12,10 +12,17 @@ public class VisibleNodes {
         return 0;
       }
       // write your code in Java SE 8
-      return rec(T, T.x);
+      return recCount(T, T.x);
     }
 
-    private int rec(Tree T, int max) {
+    /**
+     * Recursively count visible nodes
+     * 
+     * @param T Target tree
+     * @param max Max value from top
+     * @return Total visible nodes count
+     */
+    private int recCount(Tree T, int max) {
       if (T == null) {
         return 0;
       }
@@ -28,11 +35,11 @@ public class VisibleNodes {
       int left = 0;
       int right = 0;
       if (T.x < max) {
-        right = rec(T.r, T.x);
-        left = rec(T.l, T.x);
+        right = recCount(T.r, T.x);
+        left = recCount(T.l, T.x);
       } else {
-        right = rec(T.r, max);
-        left = rec(T.l, max);
+        right = recCount(T.r, max);
+        left = recCount(T.l, max);
       }
 
       return resultCount + right + left;

@@ -1,6 +1,7 @@
 package algorithm.leetcode;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -14,6 +15,8 @@ public class ThreeSum {
       indexSet.add(i);
       this.backtrack(nums, indexSet, nums[i], result);
     }
+
+    result.forEach(Collections::sort);
 
     return result;
   }
@@ -32,9 +35,11 @@ public class ThreeSum {
       if (indexSet.size() == 2) {
         indexSet.add(i);
         if (sum + nums[i] == 0) {
-
-          result.add(new ArrayList<>(
-              indexSet.stream().map(indexElm -> nums[indexElm]).collect(Collectors.toList())));
+          List<Integer> answer = indexSet.stream().map(indexElm -> nums[indexElm]).collect(Collectors.toList());
+          if (result.stream().noneMatch(existingSet -> existingSet.size() == answer.size() && answer.containsAll(existingSet))) {
+            result.add(answer);
+            break;
+          }
         }
         indexSet.remove(i);
       } else {

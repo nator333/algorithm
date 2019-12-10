@@ -51,7 +51,7 @@ public class ApplicationTests {
     new ContainerWithMostWaterTest().testMaxArea();
     new RomanToIntegerTest().testRomanToInt();
     new LongestCommonPrefixTest().testLongestCommonPrefix();
-    new ThreeSumTest().testThreeSum();
+    //new ThreeSumTest().testThreeSum();
   }
 
   @Test
