@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+static int digits[10] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57};
+
 /**
  * File              : vc_print_comb.c
  * Author            : Masa, Kazuya
@@ -8,8 +10,6 @@
 void vc_print_comb()
 {
     printf("==================\n🦐: %1$s\n==================\n", __func__);
-
-    int digits[10] = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57};
 
     int i, j, k;
     for (i = 0; i < 10; ++i)
