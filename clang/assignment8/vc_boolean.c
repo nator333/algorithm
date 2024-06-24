@@ -7,7 +7,7 @@ void vc_putstr(char *str) {
 }
 
 t_bool vc_is_even(int n) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     return EVEN(n);
 }
 

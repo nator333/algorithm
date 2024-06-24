@@ -9,7 +9,7 @@
  * Date              : Thu 14 Feb 2019
  */
 struct s_stock *vc_param_to_tab(int ac, char **av) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument is ac:%d, av: %s\n", ac, av);
     t_stock *newStock = malloc(sizeof(t_stock));
 

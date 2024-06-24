@@ -9,13 +9,13 @@ int vc_recursive_power(int n, int power)
 {
     if (n < 1 || power < 1)
     {
-        printf("==================\n%1$s\n==================\n", __func__);
+        printf("==================\n🦐: %1$s\n==================\n", __func__);
         return 0;
     }
 
     if (power == 1)
     {
-        printf("==================\n%1$s\n==================\n", __func__);
+        printf("==================\n🦐: %1$s\n==================\n", __func__);
         return n;
     }
 

@@ -7,7 +7,7 @@
  */
 void vc_putnbr(int nb)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     int nbTemp = nb;
     int count = 0;

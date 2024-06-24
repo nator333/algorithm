@@ -7,7 +7,7 @@
  */
 int vc_strncmp(char *s1, char *s2, unsigned int n)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
     int i = 0;
     for (; s1[i] && s2[i]; ++i)
     {

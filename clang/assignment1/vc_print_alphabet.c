@@ -7,10 +7,9 @@
  */
 void vc_print_alphabet()
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     char ch;
     for (ch = 'a'; ch <= 'z'; ch++) putchar(ch);
     putchar(10);
-
 };

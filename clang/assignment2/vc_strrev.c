@@ -7,7 +7,7 @@
  */
 char *vc_strrev(char *str)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     int resultCount = 0;
     while (*str != '\0')

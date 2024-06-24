@@ -9,7 +9,7 @@
 
 int main()
 {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
 
     // Exercise 00
     printf("Result is %d\n", vc_iterative_factorial(5));

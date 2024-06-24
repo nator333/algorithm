@@ -4,7 +4,7 @@
  * Date              : Fri 14 Feb 2019
  */
 int vc_is_sort(int *tab, int length, int(*f)(int, int)) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     int isPositive = 0;
     int isNegative = 0;
     for (int i = 0; i < length - 1; ++i) {

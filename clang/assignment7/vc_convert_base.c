@@ -33,7 +33,7 @@ static int convertCharToNum(char *nbrRef, int base) {
 }
 
 char *vc_convert_base(char *nbr, char *base_from, char *base_to) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument argc is nbr:%s, base_from:%s, base_to:%s\n", nbr, base_from, base_to);
 
     // 1. Fix nbr to decimal

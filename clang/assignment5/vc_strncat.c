@@ -4,7 +4,7 @@
  * Date              : Mon 11 Feb 2019
  */
 char *vc_strncat(char *dest, char *src, int n) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument dest is %s\n", dest);
     printf("Argument src is %s\n", src);
 

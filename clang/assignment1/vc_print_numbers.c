@@ -7,7 +7,7 @@
  */
 void vc_print_numbers()
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     char num;
     for (num = 48; num < 58; num++) putchar(num);

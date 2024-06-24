@@ -6,7 +6,7 @@
  * Date              : Feb 11 2019
  */
 int vc_ultimate_range(int **range, int min, int max) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     int i;
     if (min >= max) {
         return 0;

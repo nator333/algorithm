@@ -7,7 +7,7 @@
  */
 void vc_swap(int *a, int *b)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
     printf("a Before: %1$d\n", *a);
     printf("b Before: %1$d\n", *b);
     

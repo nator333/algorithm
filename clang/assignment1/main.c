@@ -9,7 +9,7 @@
 
 int main()
 {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     vc_print_alphabet();
     vc_print_reverse_alhabet();
     vc_print_numbers();

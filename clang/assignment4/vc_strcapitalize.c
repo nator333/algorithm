@@ -7,7 +7,7 @@
  */
 char *vc_strcapitalize(char *str)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     int length = 1;
     while (*str++ != '\0')

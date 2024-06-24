@@ -6,7 +6,7 @@
  * Date              : Mon 11 Feb 2019
  */
 char *vc_strdup(char *str) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument is %s\n", str);
 
     int length = 0;

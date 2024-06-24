@@ -7,7 +7,7 @@
  */
 int vc_atoi(char *str)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     int sizeOfNums = 0;
     // take the number from char *

@@ -6,7 +6,7 @@
  * Date              : Mon 11 Feb 2019
  */
 char *vc_concat_params(int argc, char **argv) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument argc is %d\n", argc);
 
     // 1. Calculate total length

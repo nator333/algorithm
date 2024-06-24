@@ -7,7 +7,7 @@
  */
 void vc_putstr(char *str)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     do{
         putchar(*str);

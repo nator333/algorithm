@@ -29,7 +29,7 @@ void printCharAry(char **strAry) {
 }
 
 void vc_show_tab(struct s_stock *stock) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printChar("stock->size_param: ", FALSE);
     printNum(stock->size_param);
     printChar("stock->str: ", FALSE);

@@ -4,7 +4,7 @@
  * Date              : Mon 11 Feb 2019
  */
 int vc_str_is_lowercase(char *str) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument is %s\n", str);
     if (!*str) {
         return 1;

@@ -47,7 +47,7 @@ int count_characters(char *src, int start) {
  * The last String is null, in a way to tell when is the end of the array.
  */
 char **vc_split_whitespaces(char *src) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument is %s\n", src);
 
     int dest_size = count_words(src);

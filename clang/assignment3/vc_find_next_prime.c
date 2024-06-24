@@ -9,7 +9,7 @@ int vc_find_next_prime(int n)
 {
     if (n < 2)
     {
-        printf("==================\n%1$s\n==================\n", __func__);
+        printf("==================\n🦐: %1$s\n==================\n", __func__);
         return 0;
     }
 
@@ -21,6 +21,6 @@ int vc_find_next_prime(int n)
         }
     }
 
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
     return n;
 }

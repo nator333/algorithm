@@ -18,7 +18,7 @@ void dispNumAry(char *str, int *tab, int size)
 
 void vc_sort_int_table(int *tab, int size)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     dispNumAry("Before", tab, size);
 

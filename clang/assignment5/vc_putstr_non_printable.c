@@ -4,7 +4,7 @@
  * Date              : Mon 11 Feb 2019
  */
 void vc_putstr_non_printable(char *str) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument is %s\n", str);
 
     printf("Result is ");

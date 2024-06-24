@@ -7,7 +7,7 @@
  */
 int iterative_power(int n, int power)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     printf("Argument is %d & %d\n", n, power);
     if (n < 1)

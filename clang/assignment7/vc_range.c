@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 int *vc_range(int min, int max) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     printf("Argument is min:%d max:%d \n", min , max);
 
     if (max < min) {

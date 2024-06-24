@@ -7,7 +7,7 @@
  */
 void vc_ultimate_div_mod(int *a, int *b)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     printf("A: %1$d\n", *a);
     printf("B: %1$d\n", *b);

@@ -7,7 +7,7 @@
  */
 void vc_div_mod(int a, int b, int *div, int *mod)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     *div = a / b;
     *mod = a % b;

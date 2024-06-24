@@ -7,7 +7,7 @@
  */
 char *vc_strncpy(char *dest, char *src, unsigned int n)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
     int i = 0;
     while (src[i] != '\0')
     {

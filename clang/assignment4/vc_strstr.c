@@ -7,7 +7,7 @@
  */
 char *vc_strstr(char *str, char *to_find)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     if (*to_find == '\0')
     {

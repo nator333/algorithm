@@ -16,7 +16,7 @@ int compareStr(char *str1, char *str2) {
 
 
 void vc_sort_words(char **words) {
-    printf("======================\n%1$s\n======================\n", __func__);
+    printf("======================\n🦐: %1$s\n======================\n", __func__);
     for (int j = 0; words[j] != 0; ++j) {
         for (int i = 0; words[i + 1] != 0; ++i) {
             if (compareStr(words[i], words[i + 1]) == -1) {

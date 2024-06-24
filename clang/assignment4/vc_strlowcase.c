@@ -7,7 +7,7 @@
  */
 char *vc_strlowcase(char *str)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     int length = 1;
     while (*str++ != '\0')

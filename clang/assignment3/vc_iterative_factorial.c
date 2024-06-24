@@ -7,7 +7,7 @@
  */
 int vc_iterative_factorial(int n)
 {
-    printf("==================\n%1$s\n==================\n", __func__);
+    printf("==================\n🦐: %1$s\n==================\n", __func__);
 
     printf("Argument is %d\n", n);
     if (n < 1)
